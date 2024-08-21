@@ -9,6 +9,7 @@ model=genai.GenerativeModel('gemini-1.5-flash')
 def getResponseFromModel(userinput):
     response=model.generate_content(userinput)
     return response.text
+
 st.set_page_config(page_title="Simple ChatBot", layout="centered")
 
 st.title("✨ Simple ChatBot ✨")
